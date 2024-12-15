@@ -12,7 +12,7 @@ function loadSong(songItem) {
     audio.src = songItem.url;
     songInfo.innerHTML =
         "<div class='cover'>" +
-        "<img src='" + songItem.image + "' class='coverPicture'>" +
+        "<img src=" + songItem.image + " alt=" + songItem.title + " class='coverPicture'>" +
         "</div>" +
         "<div class='info'>" +
         "<h1 class='title'>" + songItem.title + "</h1>" +
