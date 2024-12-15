@@ -1,0 +1,121 @@
+@import url(reaset.css);
+@import url(global.css);
+@import url(font-icon.css);
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #212121;
+    border-radius: 40px;
+    max-width: 360px;
+    height: 600px;
+    margin: 48px auto;
+    box-shadow: -20px 10px 50px 20px rgba(0, 0, 0, 0.256), inset 0 0 40px 4px rgba(16, 16, 16, 0.849);
+}
+
+#songInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 40px;
+}
+
+.cover {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.256);
+    object-fit: cover;
+}
+
+.cover .coverPicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.info {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 16px;
+}
+
+.info .title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+.info .sub {
+    font-size: 12px;
+    color: #BDBDBD;
+    font-weight: normal;
+    margin: 0;
+}
+
+#audioPlayer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: #212121;
+    padding: 24px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow:inset 0 0 50px 5px rgba(0, 0, 0, 0.5);
+}
+
+#audioPlayer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    background: none;
+}
+
+
+#audioPlayer button i {
+    font-size: 24px;
+}
+
+#next,
+#prev {
+    color: #9E9E9E;
+}
+
+#next:hover,
+#prev:hover {
+    color: #fff;
+}
+
+#playPause {
+    background: #222222;
+    color: #FF5722;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+    background: #212121;
+}
+
+#playPause:hover {
+    background: #FF5722;
+    color: #fff;
+    box-shadow: inset 0 0 8px 2px rgba(156, 26, 0, 0.695), 0 5px 10px 2px rgba(0, 0, 0, 0.256);
+}
+
+@media screen and (max-width:375px) {
+    .product {
+        max-width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+}
